@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Basic Page Needs––––––––––––––––––––––––––– -->
+
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <title>Home</title>
+
+    <!-- Bootstrap Core CSS ––––––––––––––––––––––––––– -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS ––––––––––––––––––––––––––– -->
+    <!-- Active the custom CSS link by removing the comment marks -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Fontawesome ––––––––––––––––––––––––––– -->
+    <script src="https://kit.fontawesome.com/5c9f2dfb26.js"></script>
+    <!-- Favicon––––––––––––––––––––––––––– -->
+  </head>
+
+  <body id="home">
+    <!-- Start editing your contents from the Main content -->
+    <header>
+      <div class="skip"><a href="#main">Skip to Main Content</a></div>
+       <!-- Nav -->
+       
+       <nav class="navbar navbar-expand-sm  navbar-light justify-content-between flex-sm-row-reverse flex-column">
+       <!-- Brand/logo -->
+ 
+       <!-- Links -->
+       <ul id= "myUl" class="navbar-nav flex-row d-none d-sm-block">
+         <li class="nav-item">
+           <a class="nav-link mx-2 active" href="index.html">Home</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link mx-2" href="about.html">About</a>
+         </li>
+         <li id="gallerynav" class="nav-item">
+           <a class="nav-link mx-2" href="modal.html">Gallery</a>
+         </li>
+       </ul>
+     </nav>
+ 
+     <!-- The overlay -->
+     <div id="myNav" class="overlay">
+       <!-- Button to close the overlay navigation -->
+       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+         >&times;</a
+       >
+ 
+       <!-- Overlay content -->
+       <div class="overlay-content">
+        <a href="modal.html"><img class="menu1" src="img/galleryicon.svg" alt="Gallery page icon"></a>
+        <a href="index.html"><img class="menu2" src="img/homepageicon.svg" alt="Home page icon"></a>
+        <a href="about.html"><img class="menu3" src="img/abouticon.svg" alt="About page icon"></a>
+      </div>
+     </div>
+ 
+     <!-- Use any element to open/show the overlay navigation menu -->
+     <span id= "mySpan" class="d-md-none" style="font-size:35px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </header>
+
+    <main id="main">
+      <div class="container text-center d-block d-sm-none">
+        <div class="homehi">
+           <h1 class="first-header">Hi, I'm</h1>
+        </div> 
+        <h2 id="firstname">Zhiye</h2>
+        <h2 id="lastname">Wang</h2>
+      </div>
+  
+      <div class="container text-center d-none d-sm-block">
+        <div class="homehi">
+           <h1>Hi, I'm</h1>
+        </div>
+        <div class="homename">
+           <h2>Zhiye Wang</h2>
+         </div>
+      </div>
+  
+      <div class="container text-center">
+        <div class="row justify-content-around">
+          <div class="col-sm-3 col-6">
+            <a href="about.html" target="_blank" class="btn btn-primary">About</a>
+          </div>
+  
+          <div class="col-sm-3 col-6">
+            <a href="modal.html" target="_blank" class="btn btn-primary"
+              >Gallery</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--   Main content-->
+    <footer>
+      <div class="container-fluid">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-sm-auto text-center">
+            <a class="social" href=" tel:+6162748926 " alt="phone number" aria-label="phone number"
+              ><i class="fas fa-phone-square"></i
+            ></a>
+            <a class="social" href="mailto:zhiyew@umich.edu " alt="email address" aria-label="email address"
+              ><i class="fas fa-at"></i
+            ></a>
+            <a class="social" href="https://www.facebook.com/profile.php?id=100073488847147" alt="facebook account" aria-label="facebook account"><i class="fab fa-facebook-f"></i></a>
+            <a class="social" href="https://www.instagram.com/violettaaaaaw/" alt="instagram account" aria-label="instagram account"><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="col-sm-auto text-center">
+            <p>Copyright © 2022 Violetta. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--end of footer-->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+      </script>
+  </body>
+</html>
